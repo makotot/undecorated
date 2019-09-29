@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/undecorated-test',
+  pathPrefix: '/undecorated',
   siteMetadata: {
     title: `undecorated`,
     description: ``,
