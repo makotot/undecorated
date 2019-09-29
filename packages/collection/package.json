@@ -1,0 +1,66 @@
+{
+  "name": "collection",
+  "private": true,
+  "description": "",
+  "version": "0.1.0",
+  "author": "makotot",
+  "dependencies": {
+    "@sindresorhus/slugify": "^0.9.1",
+    "body-scroll-lock": "^2.6.4",
+    "cssbeautify": "^0.3.1",
+    "gatsby": "^2.13.73",
+    "gatsby-image": "^2.2.10",
+    "gatsby-plugin-manifest": "^2.2.6",
+    "gatsby-plugin-offline": "^2.2.7",
+    "gatsby-plugin-react-helmet": "^3.1.4",
+    "gatsby-plugin-sharp": "^2.2.13",
+    "gatsby-source-filesystem": "^2.1.11",
+    "gatsby-transformer-sharp": "^2.2.7",
+    "normalize.css": "^8.0.1",
+    "pretty": "^2.0.0",
+    "prism-react-renderer": "^0.1.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-frame-component": "^4.1.1",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
+    "react-syntax-highlighter": "^11.0.1",
+    "use-clipboard-copy": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/body-scroll-lock": "^2.6.1",
+    "@types/cssbeautify": "^0.3.1",
+    "@types/node": "^12.7.2",
+    "@types/pretty": "^2.0.0",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-helmet": "^5.0.9",
+    "@types/react-syntax-highlighter": "^10.2.1",
+    "@types/styled-components": "^4.1.18",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby-plugin-styled-components": "^3.1.2",
+    "gatsby-plugin-typescript": "^2.1.4",
+    "prettier": "^1.18.2",
+    "styled-components": "^4.3.2",
+    "typescript": "^3.5.3"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d public",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makotot/undecorated"
+  },
+  "bugs": {
+    "url": "https://github.com/makotot/undecorated/issues"
+  }
+}
