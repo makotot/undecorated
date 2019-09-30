@@ -1,6 +1,7 @@
 module.exports = {
   pathPrefix: '/undecorated',
   siteMetadata: {
+    siteUrl: 'https://makotot.github.io/undecorated/',
     title: `undecorated`,
     description: ``,
     author: `makotot`,
@@ -30,6 +31,13 @@ module.exports = {
         theme_color: `#222`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-58223460-7',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
