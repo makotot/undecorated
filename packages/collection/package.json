@@ -2,7 +2,7 @@
   "name": "collection",
   "private": true,
   "description": "",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "makotot",
   "dependencies": {
     "@sindresorhus/slugify": "^0.9.1",
