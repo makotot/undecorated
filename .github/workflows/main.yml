@@ -13,8 +13,10 @@ jobs:
           node-version: 12
       - run:
           npm install -g yarn
-          yarn run collection:build
       
+      - name: build
+        run: yarn run collection:build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.4.0
         env:
