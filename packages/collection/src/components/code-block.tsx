@@ -7,7 +7,7 @@ import { Code } from './code'
 const Pre = styled.pre`
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 0.5rem;
+  padding: 0.5rem 4rem 0.5rem 0.5rem;
   min-height: 4rem;
 `
 
