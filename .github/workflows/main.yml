@@ -1,5 +1,7 @@
 name: Github pages
-on: [push]
+on: push
+  branches:
+    - master
 env:
   branches: master
 jobs:
@@ -17,6 +19,9 @@ jobs:
       - name: Install dependencies
         run: yarn
       
+      - name: bootstrap
+        run: yarn run bootstrap
+
       - name: build
         run: yarn run collection:build
 
