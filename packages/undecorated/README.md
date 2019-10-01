@@ -1,11 +1,13 @@
-# `undecorated`
+# [Undecorated](https://makotot.github.io/undecorated/)
 
-> TODO: description
+![npm](https://img.shields.io/npm/v/undecorated?style=flat-square)
 
-## Usage
+> Collection of reusable layout pattern.
 
-```
-const undecorated = require('undecorated');
+While components with decorations need to define product-specific styles for each product, layout patterns without decorations do not need to depend on the product itself.
+Undecorated aims to provide a reusable layout pattern with no decoration.
 
-// TODO: DEMONSTRATE API
-```
+
+## License
+
+MIT
