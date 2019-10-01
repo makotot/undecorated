@@ -1,0 +1,32 @@
+name: Github pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Uses Node.js 12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run:
+          npm install -g yarn@1.17.2
+
+      - name: Install dependencies
+        run: yarn
+      
+      - name: bootstrap
+        run: yarn run bootstrap
+
+      - name: build
+        run: yarn run collection:build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v2.4.0
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./packages/collection/public
