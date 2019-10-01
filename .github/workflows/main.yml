@@ -2,8 +2,6 @@ name: Github pages
 on: push
   branches:
     - master
-env:
-  branches: master
 jobs:
   build:
     runs-on: ubuntu-latest
