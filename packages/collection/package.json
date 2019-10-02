@@ -6,6 +6,7 @@
   "author": "makotot",
   "dependencies": {
     "@sindresorhus/slugify": "^0.9.1",
+    "@types/react-icons": "^3.0.0",
     "body-scroll-lock": "^2.6.4",
     "cssbeautify": "^0.3.1",
     "gatsby": "^2.13.73",
@@ -27,6 +28,7 @@
     "react-icons": "^3.7.0",
     "react-syntax-highlighter": "^11.0.1",
     "undecorated": "^0.1.0",
+    "undecorated-tokens": "^0.1.0",
     "use-clipboard-copy": "^0.1.0"
   },
   "devDependencies": {
