@@ -45,18 +45,22 @@ version: 2.1
 jobs:
   build:
     docker: 
-       - image: circleci/node:12
-     steps:
-       - checkout
-       - restore_cache:
-         keys:
-           - v1-yarn-deps-{{ checksum "yarn.lock" }}
-       - run: yarn
-       - run: yarn bootstrap
-       - save_cache
-         key: v1-yarn-deps-{{ checksum "yarn.lock" }}
-         paths:
-           - node_modules
-           - packages/collection/node_modules
-           - packages/undecorated-tokens/node_modules
-           - packages/undecorated/node_modules
+      - image: circleci/node:12
+    steps:
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
+#       - images: circleci/node:12
+#     steps:
+#       - checkout
+#       - restore_cache:
+#         keys:
+#           - v1-yarn-deps-{{ checksum "yarn.lock" }}
+#       - run: yarn
+#       - run: yarn bootstrap
+#       - save_cache
+#         key: v1-yarn-deps-{{ checksum "yarn.lock" }}
+#         paths:
+#           - node_modules
+#           - packages/collection/node_modules
+#           - packages/undecorated-tokens/node_modules
+#           - packages/undecorated/node_modules
