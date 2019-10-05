@@ -51,9 +51,6 @@ jobs:
       - restore_cache:
           keys:
             - v1-yarn-deps-{{ checksum "yarn.lock" }}
-      - run: echo "hello world" # run the `echo` command
-      - run: rm -rf ~/.yarn
-      - run: npm i -g yarn
       - run: yarn --version
       - run: yarn
       - run: yarn bootstrap
