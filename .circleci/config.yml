@@ -29,11 +29,12 @@ jobs:
       - run: git config user.name $GITHUB_NAME
       - run: git config user.email $GITHUB_EMAIL
       - run: yarn run collection:deploy
-#workflows:
-#  version: 2
-#  build_deploy:
-#    jobs:
-#      - build
+
+workflows:
+  version: 2
+  build_deploy:
+    jobs:
+      - build
 #      - deploy:
 #        requires:
 #          - build
