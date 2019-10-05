@@ -55,7 +55,8 @@ jobs:
       - run: yarn
       - run: yarn bootstrap
       - save_cache
-          key: v1-yarn-deps-{{ checksum "yarn.lock" }}
+          keys:
+            - v1-yarn-deps-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
             - packages/collection/node_modules
