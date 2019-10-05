@@ -21,8 +21,14 @@ jobs:
       - name: bootstrap
         run: yarn run bootstrap
 
+      - name: packages:build
+        run: yarn run packages:build
+
       - name: build
         run: yarn run collection:build
+
+      #- name: Setup tmate session
+      #  uses: mxschmitt/action-tmate@v1
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.4.0
