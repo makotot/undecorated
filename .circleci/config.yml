@@ -49,9 +49,10 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - restore_cache:
-        keys:
-          - v1-yarn-deps-{{ checksum "yarn.lock" }}
+          keys:
+            - v1-yarn-deps-{{ checksum "yarn.lock" }}
       - run: echo "hello world" # run the `echo` command
+
 #       - images: circleci/node:12
 #     steps:
 #       - checkout
