@@ -1,0 +1,42 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - images: circleci/node:12
+    steps:
+      - checkout
+      - restore_cache:
+        keys:
+          - v1-yarn-deps-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - run: yarn bootstrap
+      - save_cache
+        key: v1-yarn-deps-{{ checksum "yarn.lock" }}
+        paths:
+          - node_modules
+          - packages/collection/node_modules
+          - packages/undecorated-tokens/node_modules
+          - packages/undecorated/node_modules
+  
+  deploy:
+    docker:
+      - images: circleci/node:12
+    steps:
+      - checkout
+      - restore_cache:
+        keys:
+          - v1-yarn-deps-{{ checksum "yarn.lock" }}
+      - run: yarn
+      - run: yarn run bootstrap
+      - run: git config user.name $GITHUB_NAME
+      - run: git config user.email $GITHUB_EMAIL
+      - run: yarn run collection:deploy
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+        requires:
+          - build
