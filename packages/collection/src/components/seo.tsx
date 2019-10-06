@@ -25,6 +25,12 @@ function SEO({ description, lang, meta, title }: { description: string, lang: st
         lang,
       }}
       title={title}
+      meta={[
+        {
+          name: 'description',
+          content: metaDescription,
+        }
+      ]}
       titleTemplate={`${site.siteMetadata.title}`}
     >
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap" />
