@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://makotot.github.io/undecorated/',
     title: `undecorated`,
-    description: ``,
+    description: `Collection of reusable layout pattern of CSS and styled-components.`,
     author: `makotot`,
   },
   plugins: [
