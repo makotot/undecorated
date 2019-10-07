@@ -29,7 +29,11 @@ function SEO({ description, lang, meta, title }: { description: string, lang: st
         {
           name: 'description',
           content: metaDescription,
-        }
+        },
+        {
+          name: 'google-site-verification',
+          content: 'PHc2RN1kqWrlcCNtsmrI53TDAeZ72egGJbL2xhMl_vc',
+        },
       ]}
       titleTemplate={`${site.siteMetadata.title}`}
     >
