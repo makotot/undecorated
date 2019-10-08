@@ -12,6 +12,14 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-preconnect',
+      options: {
+        domains: [
+          'https://www.google-analytics.com',
+        ],
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
