@@ -1,6 +1,7 @@
 import * as WithLeftGhost from './with-left-ghost'
 import * as Centered from './centered'
 import * as Distributed from './distributed'
+import * as Isorated from './isorated'
 import * as EqualCol from './equal-col'
 import * as GutterCol from './gutter-col'
 import * as GutterInline from './gutter-inline'
@@ -13,6 +14,7 @@ export {
   WithLeftGhost,
   Centered,
   Distributed,
+  Isorated,
   EqualCol,
   GutterCol,
   GutterInline,
