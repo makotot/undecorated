@@ -3,6 +3,8 @@ import * as WithLeftGhost from '../patterns/with-left-ghost'
 import * as Centered from '../patterns/centered'
 import * as GutterRow from '../patterns/gutter-row'
 import * as GutterCol from '../patterns/gutter-col'
+import * as IsolatedLeftEnd from '../patterns/isorated-left-end'
+import * as IsolatedRightEnd from '../patterns/isorated-right-end'
 import * as Distributed from '../patterns/distributed'
 import * as EqualCol from '../patterns/equal-col'
 import * as StickyFooter from '../patterns/sticky-footer'
@@ -15,6 +17,8 @@ const patterns: any[] = [
   GutterRow,
   GutterCol,
   Distributed,
+  IsolatedLeftEnd,
+  IsolatedRightEnd,
   EqualCol,
   StickyFooter,
   InlineCentered,
