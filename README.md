@@ -1,6 +1,6 @@
 # [Undecorated](https://makotot.github.io/undecorated/)
 
-> Collection of reusable layout pattern.
+> Collection of reusable layout pattern of css and styled-components.
 
 While components with decorations need to define product-specific styles for each product, layout patterns without decorations do not need to depend on the product itself.
 Undecorated aims to provide a reusable layout pattern with no decoration.
