@@ -9,7 +9,7 @@ import { AppProvider } from '../context/app-context'
 const IndexPage = () => (
   <>
     <GlobalStyle />
-    <SEO title="Home" />
+    <SEO title="" />
     <AppProvider>
       <Layout>
         <Wrapper>

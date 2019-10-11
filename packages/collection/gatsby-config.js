@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/undecorated',
   siteMetadata: {
     siteUrl: 'https://makotot.github.io/undecorated/',
-    title: `undecorated`,
+    title: `UNDECORATED | Collection of reusable layout pattern of CSS and styled-components`,
     description: `Collection of reusable layout pattern of CSS and styled-components.`,
     author: `makotot`,
   },
