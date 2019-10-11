@@ -1,6 +1,6 @@
 # [Undecorated](https://makotot.github.io/undecorated/)
 
-![npm](https://img.shields.io/npm/v/undecorated?style=flat-square)
+[![npm](https://img.shields.io/npm/v/undecorated?style=flat-square)](https://www.npmjs.com/package/undecorated)
 
 > Collection of reusable layout pattern of css and styled-components.
 
