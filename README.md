@@ -5,6 +5,11 @@
 While components with decorations need to define product-specific styles for each product, layout patterns without decorations do not need to depend on the product itself.
 Undecorated aims to provide a reusable layout pattern with no decoration.
 
+## Packages
+
+- [undecorated](./packages/undecorated)
+- [undecorated-tokens](./packages/tokens)
+
 
 ## Development
 
