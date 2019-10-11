@@ -8,7 +8,7 @@ Undecorated aims to provide a reusable layout pattern with no decoration.
 ## Packages
 
 - [undecorated](./packages/undecorated)
-- [undecorated-tokens](./packages/undecorated-tokens)
+- [undecorated-tokens](./packages/tokens)
 
 
 ## Development
