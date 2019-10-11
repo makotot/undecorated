@@ -24,7 +24,7 @@ function SEO({ description, lang, meta, title }: { description: string, lang: st
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={ site.siteMetadata.title }
       meta={[
         {
           name: 'description',
@@ -35,7 +35,8 @@ function SEO({ description, lang, meta, title }: { description: string, lang: st
           content: 'PHc2RN1kqWrlcCNtsmrI53TDAeZ72egGJbL2xhMl_vc',
         },
       ]}
-      titleTemplate={`${site.siteMetadata.title}`}
+      titleTemplate={`${ site.siteMetadata.title }`}
+      defaultTitle={ site.siteMetadata.title }
     >
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap" />
     </Helmet>
@@ -46,6 +47,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  title: '',
 }
 
 export default SEO
