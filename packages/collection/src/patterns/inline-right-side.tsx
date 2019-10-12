@@ -7,7 +7,7 @@ const title = 'inline right side'
 const docs = {
   title,
   id: slugify(title),
-  summary: 'Place an inline element to right side.',
+  summary: 'Places an inline element to right side.',
   tags: [],
 }
 

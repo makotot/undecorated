@@ -7,7 +7,7 @@ const title = 'with left ghost'
 const docs = {
   title,
   id: slugify(title),
-  summary: 'Place a non existing element on the left and arrange columns with same width.',
+  summary: 'Places a non existing element on the left and arrange columns with same width.',
   tags: [],
 }
 
