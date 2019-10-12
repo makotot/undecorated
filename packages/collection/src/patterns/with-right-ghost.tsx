@@ -1,23 +1,23 @@
 import React from 'react'
 import slugify from '@sindresorhus/slugify'
 import { Dummy, DummyInline } from '../components/dummy'
-import { WithLeftGhost } from 'undecorated'
+import { WithRightGhost, InlineRightSide } from 'undecorated'
 
-const title = 'with left ghost'
+const title = 'with right ghost'
 const docs = {
   title,
   id: slugify(title),
-  summary: 'Places a non existing element on the left and arrange columns with same width.',
+  summary: 'Places a non existing element on the right and arrange columns with same width.',
   tags: [],
 }
 
 const template: React.SFC = () => {
   return (
-    <div className="with-left-ghost">
-      <Dummy />
-      <div>
+    <div className="with-right-ghost">
+      <div className="inline-right-side">
         <DummyInline />
       </div>
+      <Dummy />
     </div>
   )
 }
@@ -27,17 +27,17 @@ const {
   defaultRules,
   rules,
   Block,
-} = WithLeftGhost
+} = WithRightGhost
 
 const jsxTemplate = `
-import { WithLeftGhost } from 'undecorated'
+import { WithRightGhost } from 'undecorated'
 
-<WithLeftGhost.Block>
-  <Dummy />
-  <div>
+<WithRightGhost.Block>
+  <InlineRightSide.Block>
     <DummyInline />
-  </div>
-</WithLeftGhost.Block>
+  </InlineRightSide.Block>
+  <Dummy />
+</WithRightGhost.Block>
 `
 
 export {
