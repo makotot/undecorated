@@ -34,9 +34,9 @@ const jsxTemplate = `
 import { Isorated } from 'undecorated'
 
 <Isolated.Block>
-  <Isolated.Element.Left>
+  <Isolated.Element at="left">
     <Dummy />
-  </Isolated.Element.Left>
+  </Isolated.Element>
   <Dummy />
   <Dummy />
 </Isolated.Block>

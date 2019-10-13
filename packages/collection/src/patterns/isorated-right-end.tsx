@@ -36,9 +36,9 @@ import { Isorated } from 'undecorated'
 <Isolated.Block>
   <Dummy />
   <Dummy />
-  <Isolated.Element.Right>
+  <Isolated.Element at="right">
     <Dummy />
-  </Isolated.Element.Right>
+  </Isolated.Element>
 </Isolated.Block>
 `
 

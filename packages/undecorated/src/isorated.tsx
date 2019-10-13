@@ -40,6 +40,7 @@ const Element = styled.div<elementProps>`
 
 export {
   block,
+  element,
   rules,
   defaultRules,
   Block,

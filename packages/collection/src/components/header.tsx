@@ -1,8 +1,10 @@
 import React, { useContext, ReactNode } from 'react'
+import { AppContext } from '../context/app-context'
 import styled from 'styled-components'
 import { Wrapper } from './wrapper'
-import { GutterRow } from 'undecorated'
+import { GutterRow, Isorated, GutterCol } from 'undecorated'
 import { Link } from 'gatsby'
+import { FiMenu } from 'react-icons/fi'
 
 const StyledHeader = styled.header`
   padding: 1.25rem 0;
@@ -27,6 +29,27 @@ const SubHeading = styled.p`
   letter-spacing: 0.05rem;
 `
 
+const Menu = () => {
+  const { state, dispatch } = useContext(AppContext)
+  const openDrawer = (e: React.MouseEvent) => {
+    e.preventDefault()
+    dispatch({
+      type: 'toggleDrawer',
+      isOpened: true,
+    })
+  }
+
+  return (
+    <a href="#" onClick={ openDrawer }>
+      <FiMenu />
+    </a>
+  )
+}
+
+const HeaderInner = styled(GutterCol.Block)`
+  align-items: center;
+`
+
 type HeaderProps = {
   title: string,
   children?: ReactNode,
@@ -36,14 +59,21 @@ const Header: React.SFC<HeaderProps> = ({ title }) => {
   return (
     <StyledHeader>
       <Wrapper>
-        <GutterRow.Block size="xs">
-          <GutterRow.Element>
-            <Heading><Link to="/">undecorated</Link></Heading>
-          </GutterRow.Element>
-          <GutterRow.Element>
-            <SubHeading>Collection of reusable layout pattern</SubHeading>
-          </GutterRow.Element>
-        </GutterRow.Block>
+        <HeaderInner>
+          <GutterCol.Element>
+            <Menu />
+          </GutterCol.Element>
+          <GutterCol.Element>
+            <GutterRow.Block size="xs">
+              <GutterRow.Element>
+                <Heading><Link to="/">undecorated</Link></Heading>
+              </GutterRow.Element>
+              <GutterRow.Element>
+                <SubHeading>Collection of reusable layout pattern</SubHeading>
+              </GutterRow.Element>
+            </GutterRow.Block>
+          </GutterCol.Element>
+        </HeaderInner>
       </Wrapper>
     </StyledHeader>
   )
