@@ -44,6 +44,11 @@ const globalStyle = `
     -webkit-appearance: none;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   pre {
     margin: 0;
   }

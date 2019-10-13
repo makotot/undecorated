@@ -2,6 +2,7 @@ import React, { useContext, ReactNode } from 'react'
 import styled from 'styled-components'
 import { Wrapper } from './wrapper'
 import { GutterRow } from 'undecorated'
+import { Link } from 'gatsby'
 
 const StyledHeader = styled.header`
   padding: 1.25rem 0;
@@ -37,7 +38,7 @@ const Header: React.SFC<HeaderProps> = ({ title }) => {
       <Wrapper>
         <GutterRow.Block size="xs">
           <GutterRow.Element>
-            <Heading>undecorated</Heading>
+            <Heading><Link to="/">undecorated</Link></Heading>
           </GutterRow.Element>
           <GutterRow.Element>
             <SubHeading>Collection of reusable layout pattern</SubHeading>
