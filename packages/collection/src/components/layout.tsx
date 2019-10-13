@@ -4,6 +4,9 @@ import { Header } from './header'
 import { Wrapper } from './wrapper'
 import { Main } from './main'
 import { Footer } from './footer'
+import { StickyFooter } from "undecorated"
+import { Navigation } from "./navigation"
+import { Drawer } from "./drawer"
 
 const Layout: React.SFC = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,13 +21,20 @@ const Layout: React.SFC = ({ children }) => {
 
   return (
     <>
-      <Header title={ 'Undecorated Collection' } />
-      <Main>
-        { children }
-      </Main>
-      <Wrapper>
-        <Footer />
-      </Wrapper>
+      <StickyFooter.Block>
+        <Header title={ 'Undecorated Collection' } />
+        <Drawer>
+          <Navigation />
+        </Drawer>
+        <Main>
+          { children }
+        </Main>
+        <StickyFooter.Element>
+          <Wrapper>
+            <Footer />
+          </Wrapper>
+        </StickyFooter.Element>
+      </StickyFooter.Block>
     </>
   )
 }

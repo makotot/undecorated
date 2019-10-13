@@ -2,6 +2,7 @@ import React, { useContext, ReactNode } from 'react'
 import styled from 'styled-components'
 import { AppContext } from '../context/app-context'
 import { GutterRow } from 'undecorated'
+import { Link } from 'gatsby'
 
 const StyledNavLink = styled.a`
   display: inline-block;
@@ -43,7 +44,7 @@ const Navigation: React.SFC<NavigationProps> = ({ children }) => {
     <nav>
       <GutterRow.Block size="l">
         <GutterRow.Element>
-          <NavLink href="https://github.com/makotot/undecorated" external>Github</NavLink>
+          <Link to="/about">About</Link>
         </GutterRow.Element>
       </GutterRow.Block>
     </nav>
