@@ -21,9 +21,9 @@
     "jsx": "preserve"
   },
   "include": [
-    "packages/collection/src",
-    "packages/tokens/src",
-    "packages/undecorated/src"
+    "packages/collection/src/**/*.tsx",
+    "packages/tokens/src/**/*.tsx",
+    "packages/undecorated/src/**/*.tsx"
   ],
   "typescript.tsdk": "./node_modules/typescript/lib"
 }
