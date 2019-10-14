@@ -18,5 +18,8 @@ jobs:
       - name: bootstrap
         run: yarn run bootstrap
 
+      - name: packages:build
+        run: yarn run packages:build
+
       - name: type-check
         run: yarn run tsc
