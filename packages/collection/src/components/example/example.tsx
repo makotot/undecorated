@@ -19,6 +19,7 @@ interface ExampleProps {
   summary: string,
   iframe: boolean,
   index: number,
+  jsxTemplate: string,
 }
 
 const Example:React.SFC<ExampleProps> = ({
