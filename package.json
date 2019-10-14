@@ -9,12 +9,12 @@
     "collection:dev": "yarn run bootstrap && yarn run packages:build && cd ./packages/collection && yarn run develop",
     "collection:build": "cd packages/collection && yarn run build",
     "collection:deploy": "cd packages/collection && yarn run deploy",
-    "tsc": "npx tsc",
+    "tsc": "npx lerna run tsc",
     "precommit": "lint-staged"
   },
   "lint-staged": {
     "./packages/**/*.tsx": [
-      "npx tsc --noEmit",
+      "npx lerna run tsc",
       "git add"
     ]
   },
