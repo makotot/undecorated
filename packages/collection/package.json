@@ -60,6 +60,7 @@
     "serve": "gatsby serve",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d public",
+    "tsc": "tsc",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {

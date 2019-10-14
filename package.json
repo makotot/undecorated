@@ -8,12 +8,22 @@
     "packages:build": "npx lerna run --ignore collection build",
     "collection:dev": "yarn run bootstrap && yarn run packages:build && cd ./packages/collection && yarn run develop",
     "collection:build": "cd packages/collection && yarn run build",
-    "collection:deploy": "cd packages/collection && yarn run deploy"
+    "collection:deploy": "cd packages/collection && yarn run deploy",
+    "tsc": "npx lerna run tsc",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "./packages/**/*.tsx": [
+      "npx lerna run tsc",
+      "git add"
+    ]
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
+    "husky": "^3.0.9",
     "lerna": "^3.6.0",
-    "lerna-changelog": "^0.8.2"
+    "lerna-changelog": "^0.8.2",
+    "lint-staged": "^9.4.2"
   },
   "engines": {
     "yarn": "1.17.2"
