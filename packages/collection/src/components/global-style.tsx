@@ -1,6 +1,21 @@
 import { createGlobalStyle } from 'styled-components'
+import { spaces } from 'undecorated-tokens'
+
+const createSpaces = () => `
+  ${
+    Object.keys(spaces).map((s) => {
+      return `--spaces-${ s }: ${ spaces[s] }rem;`
+    }).join('')
+  }
+`
 
 const globalStyle = `
+  :root {
+    --base-font-size: 16px;
+
+    ${ createSpaces() }
+  }
+
   * {
     box-sizing: border-box;
   }
@@ -10,7 +25,7 @@ const globalStyle = `
   }
 
   html {
-    font-size: 16px;
+    font-size: var(--base-font-size);
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
   }

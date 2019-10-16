@@ -5,6 +5,7 @@ const block = () => `
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-column-gap: ${ getSpaceSize('s') }rem;
+grid-column-gap: var(--spaces-s);
 align-items: center;
 
 &::before {
