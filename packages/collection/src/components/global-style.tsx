@@ -87,6 +87,11 @@ const globalStyle = `
     width:100%;
     height: 10rem;
   }
+
+  .dummy-background {
+    width: 100%;
+    height: 100%;
+  }
 `
 
 const GlobalStyle = createGlobalStyle`${ globalStyle }`

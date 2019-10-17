@@ -13,6 +13,7 @@ import * as InlineCentered from '../patterns/inline-centered'
 import * as InlineRightSide from '../patterns/inline-right-side'
 import * as gutterInline from '../patterns/gutter-inline'
 import * as FlowGrid from '../patterns/flow-grid'
+import * as HoryGrail from '../patterns/hory-grail'
 
 const patterns: any[] = [
   Centered,
@@ -29,6 +30,7 @@ const patterns: any[] = [
   WithLeftGhost,
   WithRightGhost,
   FlowGrid,
+  HoryGrail,
 ]
 
 const initialState: State = {

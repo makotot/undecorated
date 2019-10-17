@@ -25,8 +25,19 @@ const DummyWrapper: React.SFC<DummyWrapperProps> = ({ children }) => (
   <div className="dummy-wrapper">{ children }</div>
 )
 
+interface DummyBackgroundProps {
+  bgColor: string,
+}
+
+const DummyBackground: React.SFC<DummyBackgroundProps> = ({ bgColor }) => (
+  <div className="dummy-background" style={{
+    backgroundColor: bgColor,
+  }}></div>
+)
+
 export {
   Dummy,
   DummyInline,
   DummyWrapper,
+  DummyBackground,
 }
