@@ -11,6 +11,7 @@ import * as InlineCentered from './inline-centered'
 import * as InlineRightSide from './inline-right-side'
 import * as StickyFooter from './sticky-footer'
 import * as FlowGrid from './flow-grid'
+import * as HoryGrail from './hory-grail'
 
 export {
   WithLeftGhost,
@@ -26,4 +27,5 @@ export {
   InlineRightSide,
   StickyFooter,
   FlowGrid,
+  HoryGrail,
 }
