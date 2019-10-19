@@ -69,7 +69,7 @@ const Header: React.SFC<HeaderProps> = ({ title }) => {
                 <Heading><Link to="/">undecorated</Link></Heading>
               </GutterRow.Element>
               <GutterRow.Element>
-                <SubHeading>Collection of reusable layout pattern</SubHeading>
+                <SubHeading>Collection of reusable CSS layout pattern</SubHeading>
               </GutterRow.Element>
             </GutterRow.Block>
           </GutterCol.Element>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface LinkProps {
-  active: boolean,
+  active?: boolean,
 }
 
 const Link = styled.a`
