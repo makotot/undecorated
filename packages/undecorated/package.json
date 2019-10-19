@@ -1,7 +1,7 @@
 {
   "name": "undecorated",
   "version": "0.3.2",
-  "description": "Collection of reusable layout pattern of css and styled-components.",
+  "description": "Collection of reusable CSS layout pattern.",
   "author": "makotot <makoto.ttn@gmail.com>",
   "homepage": "https://github.com/makotot/undecorateds#readme",
   "license": "MIT",
