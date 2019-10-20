@@ -19,7 +19,7 @@ const AboutPage = () => (
         <Wrapper>
           <GutterRow.Block>
             <GutterRow.Element>
-              <Paragraph>Undecorated is Collection of reusable CSS layout pattern.</Paragraph>
+              <Paragraph><TextLink to="/">Undecorated</TextLink> is Collection of reusable CSS layout pattern.</Paragraph>
               <br />
               <Paragraph>I made Undecorated mainly for the following two purposes.</Paragraph>
               <List>
