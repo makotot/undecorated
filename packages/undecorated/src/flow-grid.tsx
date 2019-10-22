@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { tokens } from 'undecorated-tokens'
 
-const block = () => css`
+const block = () => `
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 1rem;

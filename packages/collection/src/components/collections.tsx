@@ -41,7 +41,7 @@ const Collections: React.SFC = () => {
     <>
       <GutterRow.Block>
         <GutterRow.Element>
-          <FlowGrid.Block>{ patterns }</FlowGrid.Block>
+          { patterns }
         </GutterRow.Element>
       </GutterRow.Block>
 
