@@ -59,8 +59,8 @@ const Element = {
 const block = () => `
   display: grid;
   min-height: 100vh;
-  grid-template-columns: var(--hory-grail-left-width) 1fr var(--hory-grail-right-width);
-  grid-template-rows: var(--hory-grail-head-height) 1fr var(--hory-grail-foot-height);
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'horyGrailHead horyGrailHead horyGrailHead'
     'horyGrailLeft horyGrailBody horyGrailRight'
@@ -73,11 +73,6 @@ const Block = styled.div`
 
 const defaultRules = `
   .hory-grail {
-    --hory-grail-left-width: 10vw;
-    --hory-grail-right-width: 10vw;
-    --hory-grail-head-height: 20vh;
-    --hory-grail-foot-height: 10vh;
-
     ${ block() }
   }
 

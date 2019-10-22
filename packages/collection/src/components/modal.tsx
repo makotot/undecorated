@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakPoints } from 'undecorated-tokens'
+import { tokens } from 'undecorated-tokens'
 
 interface ModalProps {
   isVisible: boolean;
@@ -18,7 +18,7 @@ const Modal = styled.div`
   background-color: #fff;
   z-index: 10;
 
-  @media screen and (min-width: ${ breakPoints.l }px) {
+  @media screen and (min-width: ${ tokens.breakPoints.l }px) {
     max-width: 980px;
   }
 `

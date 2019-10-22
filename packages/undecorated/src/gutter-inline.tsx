@@ -1,19 +1,19 @@
 import styled from 'styled-components'
-import { spaces, getSpaceSize } from 'undecorated-tokens'
+import { tokens } from 'undecorated-tokens'
 
 const inner = (size: string = 'm') => `
   display: flex;
   flex-wrap: wrap;
-  margin-right: -${ getSpaceSize(size) }rem;
+  margin-right: -${ tokens.spaces[size] }rem;
   margin-right: calc(var(--spaces-${ size }) * -1);
-  margin-bottom: -${ getSpaceSize(size) }rem;
+  margin-bottom: -${ tokens.spaces[size] }rem;
   margin-bottom: calc(var(--spaces-${ size }) * -1);
 `
 
 const item = (size: string = 'm') => `
-  margin-right: ${ getSpaceSize(size) }rem;
+  margin-right: ${ tokens.spaces[size] }rem;
   margin-right: var(--spaces-${ size });
-  margin-bottom: ${ getSpaceSize(size) }rem;
+  margin-bottom: ${ tokens.spaces[size] }rem;
   margin-bottom: var(--spaces-${ size });
 `
 
@@ -53,7 +53,7 @@ const Block = styled.div`
   ${ block() }
 `
 const generateElementRules = () => {
-  return Object.keys(spaces).map((space) => {
+  return Object.keys(tokens.spaces).map((space) => {
     return `
       .gutter-inline__inner--${ space } > .gutter-inline__item {
         ${ element.item(space) }

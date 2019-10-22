@@ -15,11 +15,10 @@ const docs = {
 const template: React.SFC = () => {
   return (
     <div className="hory-grail">
-      
       <header className="hory-grail__head"><DummyBackground bgColor="#efafcc" /></header>
-      <main className="hory-grail__body"><DummyBackground bgColor="#a7f5b7" /></main>
-      <aside className="hory-grail__left"><DummyBackground bgColor="#7e91ff" /></aside>
-      <aside className="hory-grail__right"><DummyBackground bgColor="#7e91ff" /></aside>
+      <main className="hory-grail__body"><DummyBackground bgColor="#a7f5b7" height="100%" /></main>
+      <aside className="hory-grail__left"><DummyBackground bgColor="#7e91ff" height="100%" /></aside>
+      <aside className="hory-grail__right"><DummyBackground bgColor="#7e91ff" height="100%" /></aside>
       <footer className="hory-grail__foot"><DummyBackground bgColor="#efe8af" /></footer>
     </div>
   )
@@ -39,9 +38,9 @@ import { HoryGrail } from 'undecorated'
 
 <HoryGrail.Block>
   <HoryGrail.Element.Head><div class="dummy-background" style="background-color: #efafcc;"></div></HoryGrail.Element.Head>
-  <HoryGrail.Element.Body><div class="dummy-background" style="background-color: #a7f5b7;"></div></HoryGrail.Element.Body>
-  <HoryGrail.Element.Left><div class="dummy-background" style="background-color: #7e91ff;"></div></HoryGrail.Element.Left>
-  <HoryGrail.Element.Right><div class="dummy-background" style="background-color: #7e91ff;"></div></HoryGrail.Element.Right>
+  <HoryGrail.Element.Body><div class="dummy-background" style="background-color: #a7f5b7; height: 100%;"></div></HoryGrail.Element.Body>
+  <HoryGrail.Element.Left><div class="dummy-background" style="background-color: #7e91ff; height: 100%;"></div></HoryGrail.Element.Left>
+  <HoryGrail.Element.Right><div class="dummy-background" style="background-color: #7e91ff; height: 100%;"></div></HoryGrail.Element.Right>
   <HoryGrail.Element.Foot><div class="dummy-background" style="background-color: #efe8af;"></div></HoryGrail.Element.Foot>
 </HoryGrail.Block>
 `

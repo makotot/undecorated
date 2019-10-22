@@ -26,12 +26,14 @@ const DummyWrapper: React.SFC<DummyWrapperProps> = ({ children }) => (
 )
 
 interface DummyBackgroundProps {
-  bgColor: string,
+  bgColor?: string,
+  height?: string,
 }
 
-const DummyBackground: React.SFC<DummyBackgroundProps> = ({ bgColor }) => (
+const DummyBackground: React.SFC<DummyBackgroundProps> = ({ bgColor, height }) => (
   <div className="dummy-background" style={{
     backgroundColor: bgColor,
+    height,
   }}></div>
 )
 
