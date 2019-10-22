@@ -1,4 +1,4 @@
-import React, { ReactNode, ReactFragment, useContext } from 'react'
+import React, { useContext } from 'react'
 import { FiCode } from 'react-icons/fi'
 import { createGlobalStyle } from 'styled-components'
 import { GutterRow } from 'undecorated'
@@ -34,7 +34,7 @@ const Example:React.SFC<ExampleProps> = ({
   const GlobalStyle = createGlobalStyle`
     ${ style }
   `
-  const { state, dispatch } = useContext(AppContext)
+  const { dispatch } = useContext(AppContext)
   const show = () => {
     dispatch({
       type: 'toggleModal',
@@ -78,7 +78,7 @@ const Example:React.SFC<ExampleProps> = ({
           <FootButton
             onClick={ show }
           >
-            <FiCode />&nbsp;Show Code
+            <FiCode />&nbsp;Show CSS / styled-components
           </FootButton>
         </Foot>
       </Wrapper>

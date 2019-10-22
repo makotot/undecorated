@@ -4,7 +4,7 @@ import { clearAllBodyScrollLocks } from 'body-scroll-lock'
 import { FiX } from 'react-icons/fi'
 import pretty from 'pretty'
 import cssbeautify from 'cssbeautify'
-import { FlowGrid, GutterRow } from 'undecorated'
+import { GutterRow } from 'undecorated'
 import { AppContext } from '../context/app-context'
 import { Example } from './example/example'
 import { CloseButton } from './close-button'
@@ -60,7 +60,7 @@ const Collections: React.SFC = () => {
               <CodeTab
                 groups={[
                   {
-                    title: 'SCSS',
+                    title: 'CSS(SCSS)',
                     items: [
                       {
                         code: cssbeautify(currentPattern.defaultRules || currentPattern.rules),
