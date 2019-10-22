@@ -1,6 +1,6 @@
 {
   "name": "undecorated",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Collection of reusable CSS layout pattern.",
   "author": "makotot <makoto.ttn@gmail.com>",
   "homepage": "https://github.com/makotot/undecorateds#readme",
@@ -38,7 +38,7 @@
     "typescript": "^3.6.4"
   },
   "dependencies": {
-    "undecorated-tokens": "^0.2.0"
+    "undecorated-tokens": "^0.2.1"
   },
   "keywords": [
     "css",
