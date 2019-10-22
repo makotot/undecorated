@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { spaces, getSpaceSize } from 'undecorated-tokens'
+import { tokens } from 'undecorated-tokens'
 
 const block = () => `
   display: flex;
@@ -9,7 +9,7 @@ const block = () => `
 `
 
 const element = (size: string = 'm') => `
-  margin-left: ${ getSpaceSize(size) }rem;
+  margin-left: ${ tokens.spaces[size] }rem;
   margin-left: var(--spaces-${ size });
 `
 
@@ -28,7 +28,7 @@ const Block = styled.div<BlockProps>`
 `
 
 const generateElementRules = () => {
-  return Object.keys(spaces).map((space) => {
+  return Object.keys(tokens.spaces).map((space) => {
     return `
       .gutter-col--${ space } > .gutter-col__item + .gutter-col__item {
         ${ element(space) }

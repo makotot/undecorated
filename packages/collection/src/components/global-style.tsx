@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
-import { spaces } from 'undecorated-tokens'
+import { tokens } from 'undecorated-tokens'
 
 const createSpaces = () => `
   ${
-    Object.keys(spaces).map((s) => {
-      return `--spaces-${ s }: ${ spaces[s] }rem;`
+    Object.keys(tokens.spaces).map((space) => {
+      return `--spaces-${ space }: ${ tokens.spaces[space] }rem;`
     }).join('')
   }
 `
@@ -89,8 +89,8 @@ const globalStyle = `
   }
 
   .dummy-background {
-    width: 100%;
-    height: 100%;
+    min-width: 10vw;
+    min-height: 10vh;
   }
 `
 

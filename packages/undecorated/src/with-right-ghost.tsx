@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { getSpaceSize } from 'undecorated-tokens'
+import { tokens } from 'undecorated-tokens'
 
 const block = () => `
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-column-gap: ${ getSpaceSize('s') }rem;
+grid-column-gap: ${ tokens.spaces.s }rem;
 grid-column-gap: var(--spaces-s);
 align-items: center;
 

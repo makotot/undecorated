@@ -1,13 +1,13 @@
-import styled from 'styled-components'
-import { breakPoints } from 'undecorated-tokens'
+import styled, { css } from 'styled-components'
+import { tokens } from 'undecorated-tokens'
 
-const block = () => `
+const block = () => css`
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
 
-  @media screen and (min-width: ${ breakPoints.m }px) {
+  @media screen and (min-width: ${ tokens.breakPoints.m }px) {
     grid-template-columns: 1fr 1fr;
   }
 `
