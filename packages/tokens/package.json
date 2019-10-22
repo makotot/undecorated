@@ -30,11 +30,11 @@
     "url": "https://github.com/makotot/undecorateds/issues"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-typescript": "^7.3.3",
-    "styled-components": "^4.3.2",
-    "typescript": "^3.5.3"
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "styled-components": "^4.4.0",
+    "typescript": "^3.6.4"
   }
 }
