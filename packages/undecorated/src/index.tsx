@@ -12,6 +12,7 @@ import * as InlineRightSide from './inline-right-side'
 import * as StickyFooter from './sticky-footer'
 import * as FlowGrid from './flow-grid'
 import * as HoryGrail from './hory-grail'
+import * as MediaObject from './media-object'
 
 export {
   WithLeftGhost,
@@ -28,4 +29,5 @@ export {
   StickyFooter,
   FlowGrid,
   HoryGrail,
+  MediaObject,
 }
