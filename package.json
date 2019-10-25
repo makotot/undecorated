@@ -9,14 +9,7 @@
     "collection:dev": "yarn run bootstrap && yarn run packages:build && cd ./packages/collection && yarn run develop",
     "collection:build": "cd packages/collection && yarn run build",
     "collection:deploy": "cd packages/collection && yarn run deploy",
-    "tsc": "npx lerna run tsc",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "./packages/**/*.tsx": [
-      "npx lerna run tsc",
-      "git add"
-    ]
+    "tsc": "npx lerna run tsc"
   },
   "devDependencies": {
     "gh-pages": "^2.1.1",
