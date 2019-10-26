@@ -7,7 +7,7 @@ const title = 'Media object'
 const docs = {
   title,
   id: slugify(title),
-  summary: 'media object with grid.',
+  summary: 'media object with flexbox.',
   tags: [],
   iframe: false,
 }
@@ -16,7 +16,6 @@ const template: React.SFC = () => {
   return (
     <div className="media-object">
       <div className="media-object__left"><Dummy /></div>
-      <div className="media-object__head"><Dummy /></div>
       <div className="media-object__body"><Dummy /></div>
     </div>
   )
@@ -36,7 +35,6 @@ import { MediaObject } from 'undecorated'
 
 <MediaObject.Block>
   <MediaObject.Element.Left><div class="dummy"></div></MediaObject.Element.Left>
-  <MediaObject.Element.Head><div class="dummy"></div></MediaObject.Element.Head>
   <MediaObject.Element.Body><div class="dummy"></div></MediaObject.Element.Body>
 </MediaObject.Block>
 `
