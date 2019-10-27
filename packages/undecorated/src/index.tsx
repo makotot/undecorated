@@ -13,6 +13,7 @@ import * as StickyFooter from './sticky-footer'
 import * as FlowGrid from './flow-grid'
 import * as HoryGrail from './hory-grail'
 import * as MediaObject from './media-object'
+import * as BreakParentAndFitWindow from './break-parent-and-fit-window'
 
 export {
   WithLeftGhost,
@@ -30,4 +31,5 @@ export {
   FlowGrid,
   HoryGrail,
   MediaObject,
+  BreakParentAndFitWindow,
 }

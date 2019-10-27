@@ -5,6 +5,9 @@ type tokensType = {
   spaces: {
     [key: string]: any
   },
+  width: {
+    [key: string]: any
+  }
 }
 
 const tokens: tokensType = {
@@ -21,6 +24,13 @@ const tokens: tokensType = {
     xl: 2,
     xxl: 2.5,
     xxxl: 3,
+  },
+  width: {
+    container: {
+      s: '100vw',
+      m: '640px',
+      l: '960px',
+    },
   },
 }
 
