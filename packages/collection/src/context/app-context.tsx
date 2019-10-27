@@ -15,6 +15,7 @@ import * as gutterInline from '../patterns/gutter-inline'
 import * as FlowGrid from '../patterns/flow-grid'
 import * as HoryGrail from '../patterns/hory-grail'
 import * as MediaObject from '../patterns/media-object'
+import * as BreakParentAndFitWindow from '../patterns/break-parent-and-fit-window'
 
 const patterns: any[] = [
   Centered,
@@ -33,6 +34,7 @@ const patterns: any[] = [
   FlowGrid,
   HoryGrail,
   MediaObject,
+  BreakParentAndFitWindow,
 ]
 
 const initialState: State = {
