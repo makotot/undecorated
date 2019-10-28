@@ -3,7 +3,7 @@
   "version": "0.4.2",
   "description": "Collection of reusable CSS layout pattern.",
   "author": "makotot <makoto.ttn@gmail.com>",
-  "homepage": "https://github.com/makotot/undecorateds#readme",
+  "homepage": "https://github.com/makotot/undecorated#readme",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

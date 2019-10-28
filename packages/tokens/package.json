@@ -1,7 +1,7 @@
 {
   "name": "undecorated-tokens",
   "version": "0.2.2",
-  "description": "",
+  "description": "Design tokens for undecorated",
   "author": "makotot <makoto.ttn@gmail.com>",
   "homepage": "https://github.com/makotot/undecorateds#readme",
   "license": "MIT",
@@ -36,5 +36,13 @@
     "@babel/preset-typescript": "^7.6.0",
     "styled-components": "^4.4.0",
     "typescript": "^3.6.4"
-  }
+  },
+  "keywords": [
+    "css",
+    "css in js",
+    "scss",
+    "layout",
+    "styled components",
+    "react"
+  ]
 }
