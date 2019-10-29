@@ -1,7 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby"
 import React from 'react'
 import { Header } from './header'
-import { Wrapper } from './wrapper'
 import { Main } from './main'
 import { Footer } from './footer'
 import { StickyFooter } from "undecorated"
@@ -33,9 +32,7 @@ const Layout: React.SFC = ({ children }) => {
             { children }
           </Main>
           <StickyFooter.Element>
-            <Wrapper>
-              <Footer />
-            </Wrapper>
+            <Footer />
           </StickyFooter.Element>
         </StickyFooter.Block>
       </ThemeProvider>
