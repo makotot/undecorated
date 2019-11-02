@@ -33,7 +33,7 @@ const globalStyle = `
   body {
     width: 100%;
     margin: 0;
-    font-family: 'Source Sans Pro', -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
     line-height: 1.25;
     background-color: #fff;
     color: #222;

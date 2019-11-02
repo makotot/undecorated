@@ -38,7 +38,6 @@ function SEO({ description, lang, meta, title }: { description: string, lang: st
       titleTemplate={`${ site.siteMetadata.title }`}
       defaultTitle={ site.siteMetadata.title }
     >
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap" />
     </Helmet>
   )
 }
