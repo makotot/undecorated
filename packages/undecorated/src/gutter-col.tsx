@@ -10,7 +10,6 @@ const block = () => `
 
 const element = (size: string = 'm') => `
   margin-left: ${ tokens.spaces[size] }rem;
-  margin-left: var(--spaces-${ size });
 `
 
 const Element = styled.div``

@@ -5,16 +5,12 @@ const inner = (size: string = 'm') => `
   display: flex;
   flex-wrap: wrap;
   margin-right: -${ tokens.spaces[size] }rem;
-  margin-right: calc(var(--spaces-${ size }) * -1);
   margin-bottom: -${ tokens.spaces[size] }rem;
-  margin-bottom: calc(var(--spaces-${ size }) * -1);
 `
 
 const item = (size: string = 'm') => `
   margin-right: ${ tokens.spaces[size] }rem;
-  margin-right: var(--spaces-${ size });
   margin-bottom: ${ tokens.spaces[size] }rem;
-  margin-bottom: var(--spaces-${ size });
 `
 
 const element = {
