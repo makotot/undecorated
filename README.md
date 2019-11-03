@@ -1,7 +1,5 @@
 # [Undecorated](https://makotot.github.io/undecorated/)
 
-![](https://github.com/makotot/undecorated/workflows/.github/workflows/main.yml/badge.svg)
-
 > Collection of reusable CSS layout pattern.
 
 While components with decorations need to define product-specific styles for each product, layout patterns without decorations do not need to depend on the product itself.
