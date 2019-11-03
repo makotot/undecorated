@@ -8,7 +8,6 @@ const block = () => `
 
 const element = (size: string = 'm') => `
   margin-top: ${ tokens.spaces[size] }rem;
-  margin-top: var(--spaces-${ size });
 `
 
 const Element = styled.div`
