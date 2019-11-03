@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 import { FiMenu } from 'react-icons/fi'
 
 const StyledHeader = styled.header`
-  padding: 1.25rem 0;
+  padding: 0.75rem 0;
   background-color: #fff;
   border-bottom: 1px solid #ccc;
 `

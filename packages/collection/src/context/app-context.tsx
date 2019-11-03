@@ -16,6 +16,7 @@ import * as FlowGrid from '../patterns/flow-grid'
 import * as HoryGrail from '../patterns/hory-grail'
 import * as MediaObject from '../patterns/media-object'
 import * as BreakParentAndFitWindow from '../patterns/break-parent-and-fit-window'
+import * as Space from '../patterns/space'
 
 const patterns: any[] = [
   Centered,
@@ -35,6 +36,7 @@ const patterns: any[] = [
   HoryGrail,
   MediaObject,
   BreakParentAndFitWindow,
+  Space,
 ]
 
 const initialState: State = {
