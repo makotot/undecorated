@@ -13,7 +13,7 @@ const docs = {
 
 const template: React.SFC = () => {
   return (
-    <div className="space-xl-left">
+    <div className="space">
       <Dummy />
     </div>
   )
@@ -29,7 +29,7 @@ const {
 const jsxTemplate = `
 import { Space } from 'undecorated'
 
-<Space.Block size="xl" direction="left">
+<Space.Block>
   <Dummy />
 </Space.Block>
 `

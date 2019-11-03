@@ -35,6 +35,7 @@ const paddingByDirection = ({ size = tokens.spaces.m, direction = '' }: { size: 
       `
   }
 }
+
 const block = ({ size = tokens.spaces.m, direction = '' }: { size: string, direction: string }) => `
   ${ paddingByDirection({ size, direction }) }
 `
@@ -52,14 +53,19 @@ const generateBlockRules = () => {
   }).join('')
 }
 
-const rules = `
-  ${ generateBlockRules() }
-`
-
-const defaultRules = rules
-
 const Block = styled.div<{ size?: string, direction: string }>`
   ${ ({ size = tokens.spaces.m, direction = '' }) => block({ size , direction }) }
+`
+
+const defaultRules = `
+  .space {
+    ${ block({ size: tokens.spaces.m, direction: '' }) }
+  }
+`
+
+const rules = `
+  ${ defaultRules }
+  ${ generateBlockRules() }
 `
 
 export {
