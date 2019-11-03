@@ -14,6 +14,7 @@ import * as FlowGrid from './flow-grid'
 import * as HoryGrail from './hory-grail'
 import * as MediaObject from './media-object'
 import * as BreakParentAndFitWindow from './break-parent-and-fit-window'
+import * as Space from './space'
 
 export {
   WithLeftGhost,
@@ -32,4 +33,5 @@ export {
   HoryGrail,
   MediaObject,
   BreakParentAndFitWindow,
+  Space,
 }
