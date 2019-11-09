@@ -1,20 +1,20 @@
 import React from 'react'
 import slugify from '@sindresorhus/slugify'
 import { Dummy } from '../components/dummy'
-import { FixedToEdge } from 'undecorated'
+import { FixedHeader } from 'undecorated'
 
-const title = 'Fixed to edge'
+const title = 'Fixed header'
 const docs = {
   title,
   id: slugify(title),
-  summary: 'Fixed to the edge.',
+  summary: 'Fixed display at the top of the window.',
   tags: [],
   iframe: true,
 }
 
 const template: React.SFC = () => {
   return (
-    <div className="fixed-to-edge-top">
+    <div className="fixed-header">
       <Dummy />
     </div>
   )
@@ -25,14 +25,14 @@ const {
   defaultRules,
   rules,
   Block,
-} = FixedToEdge
+} = FixedHeader
 
 const jsxTemplate = `
-import { FixedToEdge } from 'undecorated'
+import { FixedHeader } from 'undecorated'
 
-<FixedToEdge.Block edge="top">
+<FixedHeader.Block>
   <Dummy />
-</FixedToEdge.Block>
+</FixedHeader.Block>
 `
 
 export {

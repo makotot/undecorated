@@ -15,7 +15,7 @@ import * as HoryGrail from './hory-grail'
 import * as MediaObject from './media-object'
 import * as BreakParentAndFitWindow from './break-parent-and-fit-window'
 import * as Space from './space'
-import * as FixedToEdge from './fixed-to-edge'
+import * as FixedHeader from './fixed-header'
 
 export {
   WithLeftGhost,
@@ -35,5 +35,5 @@ export {
   MediaObject,
   BreakParentAndFitWindow,
   Space,
-  FixedToEdge,
+  FixedHeader,
 }
