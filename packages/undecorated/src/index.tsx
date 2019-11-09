@@ -16,6 +16,7 @@ import * as MediaObject from './media-object'
 import * as BreakParentAndFitWindow from './break-parent-and-fit-window'
 import * as Space from './space'
 import * as FixedHeader from './fixed-header'
+import * as Container from './container'
 
 export {
   WithLeftGhost,
@@ -36,4 +37,5 @@ export {
   BreakParentAndFitWindow,
   Space,
   FixedHeader,
+  Container,
 }
