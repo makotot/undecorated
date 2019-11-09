@@ -4,6 +4,7 @@ const block = () => `
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 `
 
 interface elementProps {
