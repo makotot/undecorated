@@ -17,7 +17,8 @@ import * as HoryGrail from '../patterns/hory-grail'
 import * as MediaObject from '../patterns/media-object'
 import * as BreakParentAndFitWindow from '../patterns/break-parent-and-fit-window'
 import * as Space from '../patterns/space'
-import * as FixedToTop from '../patterns/fixed-to-top'
+import * as FixedHeader from '../patterns/fixed-header'
+import * as Container from '../patterns/container'
 
 const patterns: any[] = [
   Centered,
@@ -38,7 +39,8 @@ const patterns: any[] = [
   MediaObject,
   BreakParentAndFitWindow,
   Space,
-  FixedToTop,
+  FixedHeader,
+  Container,
 ]
 
 const initialState: State = {

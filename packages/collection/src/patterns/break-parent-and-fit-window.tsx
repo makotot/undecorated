@@ -16,9 +16,9 @@ const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 
 const template: React.SFC = () => {
   return (
-    <div className="break-parent-and-fit-window">
+    <div className="container">
       <p>{ loremIpsum }</p>
-      <div className="break-parent-and-fit-window__element"><Dummy /></div>
+      <div className="break-parent-and-fit-window"><Dummy /></div>
       <p>{ loremIpsum }</p>
     </div>
   )
@@ -26,31 +26,27 @@ const template: React.SFC = () => {
 
 const {
   block,
-  element,
   rules,
   defaultRules,
   Block,
-  Element,
 } = BreakParentAndFitWindow
 
 const jsxTemplate = `
-import { BreakParentAndFitWindow } from 'undecorated'
+import { Container, BreakParentAndFitWindow } from 'undecorated'
 
-<BreakParentAndFitWindow.Block>
+<Container.Block>
   <p>${ loremIpsum }</p>
-  <BreakParentAndFitWindow.Element><div class="dummy"></div></BreakParentAndFitWindow.Element>
+  <BreakParentAndFitWindow.Block><div class="dummy"></div></BreakParentAndFitWindow.Block>
   <p>${ loremIpsum }</p>
-</BreakParentAndFitWindow.Block>
+</Container.Block>
 `
 
 export {
   block,
-  element,
   rules,
   defaultRules,
   template,
   Block,
-  Element,
   docs,
   jsxTemplate,
 }
