@@ -7,7 +7,7 @@ const StyledPlayground = styled.div`
   position: relative;
   background: #fff;
   border: 1px solid rgba(0, 0, 255, 0.25);
-  height: ${ ({ height }: { height?: string }) => height ? height : 'auto' };
+  min-height: ${ ({ minHeight }: { minHeight?: string }) => minHeight ? minHeight : 'auto' };
 `
 
 const BackgroundGridGround = styled.div`
@@ -48,8 +48,8 @@ const StyledFrame = styled(Frame)`
   border: 1px solid #ccc;
 `
 
-const Playground = ({ children, height }: { children: ReactNode, height?: string }) => (
-  <StyledPlayground height={ height }>
+const Playground = ({ children, minHeight }: { children: ReactNode, minHeight?: string }) => (
+  <StyledPlayground minHeight={ minHeight }>
     <BackgroundGridGround>
       <BackgroundGrid />
       { children }
@@ -78,7 +78,7 @@ const FramePlayground: React.SFC<FramePlaygroundProps> = ({ children, style }) =
                 <StyleSheetManager target={ document.head }>
                   <>
                     <GlobalStyle />
-                    <Playground height="100vh">{ children }</Playground>
+                    <Playground minHeight="100vh">{ children }</Playground>
                   </>
                 </StyleSheetManager>
               </>
